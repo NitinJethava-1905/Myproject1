@@ -1,0 +1,414 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <title>Shilpan Nova</title>
+</head>
+<style>
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shilpan Builders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Shilpan Nova</a></li>
+                            <li><a class="dropdown-item" href="/shilpanreva">Shilpan Reva</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/nri">NRI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/career">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/inquiry">Inquiry</a>
+                    </li>
+                </ul>
+            </div>
+            {% if user is none %}
+            
+            {% else %}
+            <div class="nav-item dropdown">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {{ user }}
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/userlogout">Logout</a></li>
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <img src="{% static 'images/img-11.jpg'%}" class="card-img-top" alt="..." style="height: 450px;">
+
+    <div class="container my-3">
+        <center>
+            <h2>SHILPAN NOVA</h2>
+        </center>
+    </div>
+
+    <div class="container my-3">
+        <center>
+            <h6>RERA Reg. No.: PR/GJ/RAJKOT/RAJKOT/OTHERS/RAA05818/010819</h6>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="overview">
+                <h2>Shilpan NOVA</h2>
+                <div class="row">
+                    <div class="col-md-6 margin-bot">
+                        <p style="text-align: justify ;"></p>Elegance creation of SHILPAN NOVA is the joint venture of
+                        two experienced groups namely SHYAMAL & SHILPAN have been known signification for their best
+                        structural creativity in this city, working individually in this field since a long by
+                        developing numerous cementic structures.</p>
+                        <p style="text-align: justify ;"></p>Welcome to see and delight now we have planned to carve
+                        your beautiful world in the name of space, light and elevation with finest design at SHILPAN
+                        NOVA.</p>
+                        <span>Experience landscape, experience nova.</span>
+
+                    </div>
+                    <div class="col-md-6">
+                        <p style="text-align: justify ;"></p>Towers of SHILPAN NOVA are creatively crafted for fourteen
+                        flooring, consisting 3BHK with extra large space, fully ventilated, modernly facilitated, life
+                        with elegant foyer.</p>
+                        <p style="text-align: justify ;"></p>Above all finest elevation, lush green environment, 24X7
+                        security system, car parking facility will be provided to make your life much more comfortable.
+                        </p>
+                        <p style="text-align: justify ;"></p>Experience the goodness of the creatively composed
+                        architectural design designed just to harmonize it with your dream of an ideal home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- <figure class="figure mx-5 my-3">
+        <center><b><figcaption class="figure-caption">Specifications</figcaption></b></center>
+
+        <img src="{% static 'images/img-13.jpg'%}" class="figure-img img-fluid rounded"
+            alt="A generic square placeholder image with rounded centers in a figure." style="height: 300px;">
+    </figure> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 45%;">
+                <img src="{% static 'images/img-13.jpg'%}" class="card-img-top" alt="..." style="height: 500px;">
+                <div class="card-body">
+
+                    <!-- <img src="{% static 'images/img-10.jpg'%}" class="card-img-top" alt="..." style="width: 103%;"><br><br> -->
+
+                </div>
+            </div>
+            <div class="card mx-4" style="width: 45%;">
+                <!-- <img src="{% static 'images/img-9.jpg'%}" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Specifications</h5>
+                        <div class="inner-pro-cont-left">
+                            <ul>
+                                <li style="text-align: justify ;">Vitrified tiles in all floor.</li>
+                                <li style="text-align: justify ;">Anti-skid flooring in washyard.</li>
+                                <li style="text-align: justify ;">Granite platform with S.S. or Quartz sink and designer
+                                    wall tiles.</li>
+                                <li style="text-align: justify ;">Provision for chimney and RO filter in kitchen.</li>
+                                <li style="text-align: justify ;">Supreme branded quality sanitary wares & bath
+                                    fittings.</li>
+                                <li style="text-align: justify ;">Solar water supply in all bathrooms & provision for
+                                    gas geyser in washyard.</li>
+                                <li style="text-align: justify ;">Fire retardant copper wiring with modular switches &
+                                    safety gear.</li>
+                                <li style="text-align: justify ;">Aluminium powder coated window with child safety grill
+                                    & provision for mosquito net.
+                                </li>
+                                <li style="text-align: justify ;">Decorative main door and other plain flush doors with
+                                    lock fittings.</li>
+                                <li style="text-align: justify ;">White wall putty finish in internal walls.</li>
+                                <li style="text-align: justify ;">Sand faced plaster with acrylic paint for external
+                                    walls.</li>
+                                <li style="text-align: justify ;"> Intercom facility for each flat.</li>
+                            </ul>
+                        </div>
+                    </center><br>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card mx-4" style="width: 45%;">
+                <!-- <img src="{% static 'images/img-9.jpg'%}" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Common Amenities</h5>
+                        <div class="inner-pro-cont-left">
+                            <ul>
+                                <ul>
+                                    <li style="text-align: justify ;">1 allotted car parking for each flat</li>
+                                    <li style="text-align: justify ;">CCTV surveillance in ground area</li>
+                                    <li style="text-align: justify ;">Grand entrance gate with security cabin</li>
+                                    <li style="text-align: justify ;">The club house with all amenities surrounded by
+                                        green landscaped area</li>
+                                    <li style="text-align: justify ;">Elegant entrance foyer and spacious lift lobby
+                                    </li>
+                                    <li style="text-align: justify ;">Auto door elevators </li>
+                                    <li style="text-align: justify ;">Generator back-up for all common facilities</li>
+                                    <li style="text-align: justify ;">Indoor lounge for senior citizens</li>
+                                    <li style="text-align: justify ;">Kidz play area with sitting space </li>
+                                    <li style="text-align: justify ;">Pick-up point for school children</li>
+                                    <li style="text-align: justify ;">Rain water harvesting, LED lightings for green
+                                        building concept</li>
+                                </ul>
+                        </div>
+                    </center><br>
+                </div>
+            </div>
+
+            <div class="card mx-4" style="width: 46%;">
+                <img src="{% static 'images/img-18.jpg'%}" class="card-img-top" alt="..." style="height: 350px;">
+                <div class="card-body">
+
+                    <!-- <img src="{% static 'images/img-10.jpg'%}" class="card-img-top" alt="..." style="width: 103%;"><br><br> -->
+
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container my-3">
+        <center>
+            <h2>Location</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <img src="{% static 'images/img-19.png'%}" class="card-img-top" alt="..." style="height: 500px;">
+    </div><br>
+
+    <div class="container my-3">
+        <center>
+            <h2>Site Layout</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 45%;">
+                <img src="{% static 'images/img-20.jpg'%}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <!-- <img src="{% static 'images/img-10.jpg'%}" class="card-img-top" alt="..." style="width: 103%;"><br><br> -->
+
+                </div>
+            </div>
+            <div class="card mx-4" style="width: 45%;">
+                <img src="{% static 'images/img-21.jpg'%}" class="card-img-top" alt="...">
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 29%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Club House Swiming Pool</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-22.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+            <div class="card mx-4" style="width: 29%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Club House Ground Floor</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-23.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+            <div class="card mx-4" style="width: 29%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Club House First Floor</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-24.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">A Type 3BHK</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-25.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">A Type Unit Plan - CARPET 1260</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-26.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">B Type 3BHK</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-27.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">B Type Unit Plan - CARPET 1100</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-28.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+        </div>
+    </div><br>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+
+                        <ul class="list-unstyled mb-0 ">
+                            <li>
+                                <a href="/" class="text-white">Home</a> <br>
+                            </li>
+                            <li>
+                                <a href="/about" class="text-white">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Shilpan Nova</a>
+                            </li>
+                            <li>
+                                <a href="/shilpanreva" class="text-white">Shilpan Reva</a>
+                            </li>
+                            <li>
+                                <a href="/career" class="text-white">Careers</a><br>
+                            </li>
+                            <li>
+                                <a href="/inquiry" class="text-white">Inquiry</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mx-4">
+                        <h4>Shilpan NOVA</h4>
+                        <p>Opp. B.T. Savani Kidney Hospital, 80' Gangotri Park Main Road, University Road, Rajkot.</p>
+                        <h4>Shilpan REVA</h4>
+                        <p>Toral Park, Uma Bhavan Road, JK Chowk, Near Aalap Avenue, University Road, Rajkot.</p>
+                        <p><strong>Email: </strong><a href="mailto:info@shilpan.in">info@shilpan.in</a><br />
+                            <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mx-4">
+                        <ul class="footer-contact list-inline" style="line-height:25px;">
+                            <li style="font-size: 18px;"><strong>Sales:</strong></li><br>
+                            <li style="font-size: 16px;">Shilpan NOVA: +91 96246 44441</li><br>
+                            <li style="font-size: 16px;">Shilpan REVA: +91 98790 17024</li><br><br>
+                            <li style="font-size: 16px;">Connect with Us:</li><br />
+                            <!-- <li class="d-inline-block"><a href="https://www.facebook.com/shilpanbuilders/"
+                                    target="_blank"><img src="images/social-icon/facebook.svg" class="img-fluid"></a>
+                            </li> -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-google"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-telegram"></i></a>
+
+                        </ul>
+                    </div>
+
+
+
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright Shilpan Builders. All rights reserved.
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

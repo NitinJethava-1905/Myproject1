@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <title>Career</title>
+</head>
+<style>
+    .dropdown:hover>.dropdown-menu
+    {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shilpan Builders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/shilpannova">Shilpan Nova</a></li>
+                            <li><a class="dropdown-item" href="/shilpanreva">Shilpan Reva</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/nri">NRI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/inquiry">Inquiry</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <img src="{% static 'images/img-11.jpg'%}" class="card-img-top" alt="..." style="height: 400px;">
+
+    <div class="container my-3">
+        <center>
+            <h2>Career</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <form class="row g-3" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" name="firstname" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" name="lastname" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefaultUsername" class="form-label">E-mail</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" name="username" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" id="validationDefault02" name="mobile" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Experience</label>
+                <input type="text" class="form-control" id="validationDefault02" name="experience" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Apply for </label>
+                <select class="form-select" id="validationDefault04" name="applyfor" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Interior designer</option>
+                    <option>Architecture </option>
+                    <option>Structural Engineer</option>
+                    <option>other</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" name="state" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Andaman and Nicobar</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chandigarh</option>
+                    <option>Chhattisgarh</option>
+                    <option>Dadra and Nagar Haveli </option>
+                    <option>Daman and Diu</option>
+                    <option>Delhi</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Lakshadweep</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Orissa</option>
+                    <option>Puducherry</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault03" name="city" required>
+            </div>
+
+
+            <div class="col-md-4">
+                <label for="validationDefault05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" name="zipcode" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Tell us about your self</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="aboutself" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label" >Resume</label>
+                <input class="form-control form-control-sm" name="resume" id="formFileSm" type="file">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Apply Now</button>
+            </div>
+        </form>
+    </div><br>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+
+                        <ul class="list-unstyled mb-0 ">
+                            <li>
+                                <a href="/" class="text-white">Home</a> <br>
+                            </li>
+                            <li>
+                                <a href="/about" class="text-white">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/shilpannova" class="text-white">Shilpan Nova</a>
+                            </li>
+                            <li>
+                                <a href="/shilpanreva" class="text-white">Shilpan Reva</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Careers</a><br>
+                            </li>
+                            <li>
+                                <a href="/inquiry" class="text-white">Inquiry</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mx-4">
+                        <h4>Shilpan NOVA</h4>
+                        <p>Opp. B.T. Savani Kidney Hospital, 80' Gangotri Park Main Road, University Road, Rajkot.</p>
+                        <h4>Shilpan REVA</h4>
+                        <p>Toral Park, Uma Bhavan Road, JK Chowk, Near Aalap Avenue, University Road, Rajkot.</p>
+                        <p><strong>Email: </strong><a href="mailto:info@shilpan.in">info@shilpan.in</a><br />
+                            <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mx-4">
+                        <ul class="footer-contact list-inline" style="line-height:25px;">
+                            <li style="font-size: 18px;"><strong>Sales:</strong></li><br>
+                            <li style="font-size: 16px;">Shilpan NOVA: +91 96246 44441</li><br>
+                            <li style="font-size: 16px;">Shilpan REVA: +91 98790 17024</li><br><br>
+                            <li style="font-size: 16px;">Connect with Us:</li><br />
+                            <!-- <li class="d-inline-block"><a href="https://www.facebook.com/shilpanbuilders/"
+                                    target="_blank"><img src="images/social-icon/facebook.svg" class="img-fluid"></a>
+                            </li> -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-google"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-telegram"></i></a>
+
+                        </ul>
+                    </div>
+
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright Shilpan Builders. All rights reserved.
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

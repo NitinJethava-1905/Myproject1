@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <title>Shilpan Reva</title>
+</head>
+<style>
+    .dropdown:hover>.dropdown-menu
+    {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shilpan Builders</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/shilpannova">Shilpan Nova</a></li>
+                            <li><a class="dropdown-item" href="#">Shilpan Reva</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/nri">NRI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/career">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/inquiry">Inquiry</a>
+                    </li>
+                </ul>
+            </div>
+            {% if user is none %}
+            
+            {% else %}
+            <div class="nav-item dropdown">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {{ user }}
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/userlogout">Logout</a></li>
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <img src="{% static 'images/img-14.jpg'%}" class="card-img-top" alt="..." style="height: 450px;">
+
+    <div class="container my-3">
+        <center>
+            <h2>SHILPAN REVA</h2>
+        </center>
+    </div>
+
+    <div class="container my-3">
+        <center>
+            <h6>RERA Reg. No.: PR/GJ/RAJKOT/RAJKOT/Others/RAA07502/A1M/200321</h6>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="overview">
+                <h2>Shilpan REVA</h2>
+                <div class="row">
+                    <div class="col-md-6 margin-bot">
+                        <p style="text-align: justify ;"></p>Home is where our soul resides! How far you may go from
+                        your abode, your feet always long to go back. If letting the hectic schedule of life behind and
+                        nestling in the cosy house of yours is a dream, then we can make it true!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p style="text-align: justify ;"></p>Shilpan Reva fulfils your wish of living in a prime
+                        locality with 2 BHK flats in the proximity of University Road. The project consists of 6 towers.
+                        The developed and buzzing suburb offers the advantages of living in the heart of the city.
+                        Schools, colleges, parks and shopping areas nearby, makes it an ideal residential locale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+   
+
+    <div class="container my-4">
+		<div class="card mb-2" style="max-width: 1500px;">
+			<div class="row g-0">
+				<div class="col-md-4" style="width: 33%;">
+					<img src="{% static 'images/img-29.png' %}" class="d-block w-100" alt="..." style="height: 350px;">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title">Specifications</h5>
+						<p class="card-text" style="text-align: justify ;">
+                            <div class="inner-pro-cont-left">
+                                <ul>
+                                    <li style="text-align: justify ;">Vitrified tiles in all floor.</li>
+                                    <li style="text-align: justify ;">Anti-skid flooring in washyard.</li>
+                                    <li style="text-align: justify ;">Granite platform with S.S. or Quartz sink and designer
+                                        wall tiles.</li>
+                                    <li style="text-align: justify ;">Provision for chimney and RO filter in kitchen.</li>
+                                    <li style="text-align: justify ;">Supreme branded quality sanitary wares & bath
+                                        fittings.</li>
+                                    <li style="text-align: justify ;">Solar water supply in all bathrooms & provision for
+                                        gas geyser in washyard.</li>
+                                    <li style="text-align: justify ;">Fire retardant copper wiring with modular switches &
+                                        safety gear.</li>
+                                    <li style="text-align: justify ;">Aluminium powder coated window with child safety grill
+                                        & provision for mosquito net.
+                                    </li>
+                                    <li style="text-align: justify ;">Decorative main door and other plain flush doors with
+                                        lock fittings.</li>
+                                    <li style="text-align: justify ;">White wall putty finish in internal walls.</li>
+                                    <li style="text-align: justify ;">Sand faced plaster with acrylic paint for external
+                                        walls.</li>
+                                    <li style="text-align: justify ;"> Intercom facility for each flat.</li>
+                                </ul>
+                            </div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container my-3">
+        <center>
+            <h2>Location</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <img src="{% static 'images/img-30.jpg'%}" class="card-img-top" alt="..." style="height: 500px;">
+    </div><br>
+
+    <div class="container my-3">
+        <center>
+            <h2>Site Layout</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <img src="{% static 'images/img-31.jpg'%}" class="card-img-top" alt="..." style="height: 500px;">
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">Ground Floor Plan</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-32.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+            <div class="card mx-4" style="width: 45%;">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">1st to 7th Floor Plan</h5>
+                    </center>
+                </div>
+                <img src="{% static 'images/img-33.jpg'%}" class="card-img-top" alt="..."><br>
+            </div>
+        </div>
+    </div><br>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+
+                        <ul class="list-unstyled mb-0 ">
+                            <li>
+                                <a href="/" class="text-white">Home</a> <br>
+                            </li>
+                            <li>
+                                <a href="/about" class="text-white">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/shilpannova" class="text-white">Shilpan Nova</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Shilpan Reva</a>
+                            </li>
+                            <li>
+                                <a href="/career" class="text-white">Careers</a><br>
+                            </li>
+                            <li>
+                                <a href="/inquiry" class="text-white">Inquiry</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mx-4">
+                        <h4>Shilpan NOVA</h4>
+                        <p>Opp. B.T. Savani Kidney Hospital, 80' Gangotri Park Main Road, University Road, Rajkot.</p>
+                        <h4>Shilpan REVA</h4>
+                        <p>Toral Park, Uma Bhavan Road, JK Chowk, Near Aalap Avenue, University Road, Rajkot.</p>
+                        <p><strong>Email: </strong><a href="mailto:info@shilpan.in">info@shilpan.in</a><br />
+                            <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mx-4">
+                        <ul class="footer-contact list-inline" style="line-height:25px;">
+                            <li style="font-size: 18px;"><strong>Sales:</strong></li><br>
+                            <li style="font-size: 16px;">Shilpan NOVA: +91 96246 44441</li><br>
+                            <li style="font-size: 16px;">Shilpan REVA: +91 98790 17024</li><br><br>
+                            <li style="font-size: 16px;">Connect with Us:</li><br />
+                            <!-- <li class="d-inline-block"><a href="https://www.facebook.com/shilpanbuilders/"
+                                    target="_blank"><img src="images/social-icon/facebook.svg" class="img-fluid"></a>
+                            </li> -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-google"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-telegram"></i></a>
+
+                        </ul>
+                    </div>
+
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright Shilpan Builders. All rights reserved.
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
