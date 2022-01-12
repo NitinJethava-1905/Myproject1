@@ -61,6 +61,19 @@
                     </li>
                 </ul>
             </div>
+            {% if user is none %}
+
+            {% else %}
+            <div class="nav-item dropdown">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    {{ user }}
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/userlogout">Logout</a></li>
+                </ul>
+            </div>
+            {% endif %}
         </div>
     </nav>
     <!-- Navbar End -->
@@ -79,18 +92,18 @@
             {% csrf_token %}
             <div class="col-md-6">
                 <label for="validationDefault01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationDefault01" name="firstname" required>
+                <input type="text" class="form-control" id="validationDefault01"  name="firstname" required>
             </div>
             <div class="col-md-6">
                 <label for="validationDefault02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" name="lastname" required>
+                <input type="text" class="form-control" id="validationDefault02"  name="lastname" required>
             </div>
             <div class="col-md-6">
                 <label for="validationDefaultUsername" class="form-label">E-mail</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2">@</span>
                     <input type="text" class="form-control" id="validationDefaultUsername"
-                        aria-describedby="inputGroupPrepend2" name="username" required>
+                        aria-describedby="inputGroupPrepend2"  name="email" required>
                 </div>
             </div>
             <div class="col-md-6">
@@ -176,7 +189,7 @@
                         <p>Toral Park, Uma Bhavan Road, JK Chowk, Near Aalap Avenue, University Road, Rajkot.
                         </p>
                         <p><strong>Email: </strong><a href="mailto:info@shilpan.in">info@shilpan.in</a><br />
-                            <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a>
+                            <!-- <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a> -->
                         </p>
                     </div>
 

@@ -107,7 +107,7 @@
                 <label for="validationCustomUsername" class="form-label">Username</label>
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" value="{{userid.username}}" name="username"
+                    <input type="text" class="form-control" id="validationCustomUsername" value="{{userid.email}}" name="username"
                         aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please choose a username.
@@ -117,7 +117,7 @@
             <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">Password</label>
                 <input type="password" class="form-control" id="validationCustom01" name="password" value="{{userid.password}}"
-                    required>
+                   readonly="readonly" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -230,7 +230,7 @@
                         <h4>Shilpan REVA</h4>
                         <p>Toral Park, Uma Bhavan Road, JK Chowk, Near Aalap Avenue, University Road, Rajkot.</p>
                         <p><strong>Email: </strong><a href="mailto:info@shilpan.in">info@shilpan.in</a><br />
-                            <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a>
+                            <!-- <strong>Website: </strong><a href="http://shilpan.in/"> shilpan.in</a> -->
                         </p>
                     </div>
 

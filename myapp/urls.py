@@ -15,5 +15,9 @@ urlpatterns = [
     path('inquiry/',views.inquiry),
     path('home/',views.home),
     path('userlogout/',views.userlogout),
-    path('updateprofile/',views.updateprofile),
+    path('updateprofile/',views.updateprofile,name="updateprofile"),
+    path('forgotpassword/',views.forgotpassword,name='forgotpassword'),
+    path('otp/',views.otp,name='otp'),
+    path('newpassword/',views.newpassword,name='newpassword'),
+    path('changepassword/',views.changepassword,name='changepassword'),
 ]
